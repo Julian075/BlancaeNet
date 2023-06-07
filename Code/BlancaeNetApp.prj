@@ -1,0 +1,157 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="2990966258" file="D:\Udea\Proyecto_de_grado\Interfaz_tesis\BlancaeNetApp.prj" location="D:\Udea\Proyecto_de_grado\Interfaz_tesis" name="BlancaeNetApp" preferred-package-location="D:\Udea\Proyecto_de_grado\Interfaz_tesis\BlancaeNetApp\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>BlancaeNetApp</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>2.0</param.version>
+    <param.authnamewatermark>Sistemic</param.authnamewatermark>
+    <param.email>Julian.santamaria@udea.edu.co</param.email>
+    <param.company>Sistemic</param.company>
+    <param.summary>This is an app designed to find the Atlapetes Blancae in camera trap videos and recordings</param.summary>
+    <param.description />
+    <param.screenshot />
+    <param.guid />
+    <param.installpath.string>\Sistemic\BlancaeNetApp\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\BlancaeNetApp\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\BlancaeNetApp\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\BlancaeNetApp\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\BlancaeNetApp</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages>
+      <item>&lt;package displayname="Deploy Imported Models for ONNX Model Format Deep Learning Toolbox Converter" enabled="true" name="Deep Learning Toolbox Converter for ONNX Model Format" product="Deep Learning Toolbox"/&gt;</item>
+    </param.support.packages>
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <param.native.matlab>false</param.native.matlab>
+    <param.checkbox>false</param.checkbox>
+    <param.example />
+    <param.help.text>Syntax 
+	  -? 
+	 
+ Input Arguments 
+	 -?  print help on how to use the application 
+	 input arguments</param.help.text>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.email />
+      <param.company />
+      <param.description />
+      <param.screenshot />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.install.notes />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+      <param.native.matlab />
+      <param.checkbox />
+      <param.example />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\BlancaeNet.mlapp</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\algorithms</file>
+    </fileset.resources>
+    <fileset.package>
+      <file>${PROJECT_ROOT}\algorithms</file>
+      <file>${PROJECT_ROOT}\CNN_and_Data_Atlapetes.mat</file>
+      <file>${PROJECT_ROOT}\Kiwinet\krgb.mat</file>
+      <file>${PROJECT_ROOT}\Resnet18_AtlapetesBlancae.mat</file>
+    </fileset.package>
+    <fileset.depfun>
+      <file>C:\Users\Julia\AppData\Roaming\MathWorks\MATLAB Add-Ons\Collections\LRSLibrary\algorithms\mc\IALM-MC\utils\bdsqr.m</file>
+      <file>C:\Users\Julia\AppData\Roaming\MathWorks\MATLAB Add-Ons\Collections\LRSLibrary\algorithms\mc\IALM-MC\utils\compute_int.m</file>
+      <file>C:\Users\Julia\AppData\Roaming\MathWorks\MATLAB Add-Ons\Collections\LRSLibrary\algorithms\mc\IALM-MC\utils\lanbpro.m</file>
+      <file>C:\Users\Julia\AppData\Roaming\MathWorks\MATLAB Add-Ons\Collections\LRSLibrary\algorithms\mc\IALM-MC\utils\lansvd.m</file>
+      <file>C:\Users\Julia\AppData\Roaming\MathWorks\MATLAB Add-Ons\Collections\LRSLibrary\algorithms\mc\IALM-MC\utils\pythag.m</file>
+      <file>C:\Users\Julia\AppData\Roaming\MathWorks\MATLAB Add-Ons\Collections\LRSLibrary\algorithms\mc\IALM-MC\utils\refinebounds.m</file>
+      <file>C:\Users\Julia\AppData\Roaming\MathWorks\MATLAB Add-Ons\Collections\LRSLibrary\algorithms\mc\IALM-MC\utils\reorth.m</file>
+      <file>C:\Users\Julia\AppData\Roaming\MathWorks\MATLAB Add-Ons\Collections\LRSLibrary\hard_threshold.m</file>
+      <file>C:\Users\Julia\AppData\Roaming\MathWorks\MATLAB Add-Ons\Collections\LRSLibrary\utils\displog.m</file>
+      <file>${PROJECT_ROOT}\assignUserInputs.m</file>
+      <file>${PROJECT_ROOT}\efficientLBP.m</file>
+      <file>${PROJECT_ROOT}\Escudo-UdeA_2.png</file>
+      <file>${PROJECT_ROOT}\fotoefectos.com_.png</file>
+      <file>${PROJECT_ROOT}\generateRadialFilterLBP.m</file>
+      <file>${PROJECT_ROOT}\IAvH_1.png</file>
+      <file>${PROJECT_ROOT}\Icon_Atl_Bl.jpg</file>
+      <file>${PROJECT_ROOT}\KiwiNet.m</file>
+      <file>${PROJECT_ROOT}\LOGO Neotropical Innovation WHITE.png</file>
+      <file>${PROJECT_ROOT}\Montañerito Paisa.jpg</file>
+      <file>${PROJECT_ROOT}\MultiLayerRPCA_Interfaz.m</file>
+      <file>${PROJECT_ROOT}\Prueba_red_indv_resnet18.m</file>
+      <file>${PROJECT_ROOT}\Recortar_imagenes_boundingbox.m</file>
+      <file>${PROJECT_ROOT}\roundnS.m</file>
+      <file>${PROJECT_ROOT}\run_algorithm_2.m</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\BlancaeNetApp\for_testing" name="readme.txt" optional="true">D:\Udea\Proyecto_de_grado\Interfaz_tesis\BlancaeNetApp\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\BlancaeNetApp\for_testing" name="BlancaeNetApp.exe" optional="false">D:\Udea\Proyecto_de_grado\Interfaz_tesis\BlancaeNetApp\for_testing\BlancaeNetApp.exe</file>
+      <file location="${PROJECT_ROOT}\BlancaeNetApp\for_testing" name="splash.png" optional="false">D:\Udea\Proyecto_de_grado\Interfaz_tesis\BlancaeNetApp\for_testing\splash.png</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>D:\Programass\MATLAB_2023</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
