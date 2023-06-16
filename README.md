@@ -8,7 +8,7 @@ This repository contains the computational application for recognizing Atlapetes
 
 The repository includes the following:
 
-- **Executable:** The executable file for the computational application.
+- **Executable:** The executable file for the computational application (compatible with Windows). Please note that you need to download and install MATLAB Runtime(R2023a) for the executable to work. You can download MATLAB Runtime from the following link: [MATLAB Runtime](https://www.mathworks.com/products/compiler/mcr/index.html).
 - **Source Code:** The source code used to generate the executable and train the neural network.
 - **Dataset:** The dataset used for training and evaluation. You can download the dataset from the following link: [Dataset](https://udeaeduco-my.sharepoint.com/:f:/g/personal/julian_santamaria_udea_edu_co/EqbqHZx4AtZErNrTq3c5_lABJdEcIZIaHEKnhEPSQnt34Q).
 
@@ -17,12 +17,10 @@ The repository includes the following:
 To use the computational application, follow these steps:
 
 1. Download the entire repository to your local machine.
-2. Locate the executable file in the repository folder.
-3. Run the executable file to initiate the recognition process.
+2. Make sure you have downloaded and installed MATLAB Runtime(R2023a) from the provided link.
+3. Locate the executable file in the repository folder.
+4. Run the executable file to initiate the recognition process.
 
 ## Support
 
-If you encounter any issues or have any questions, please feel free to open an issue in the repository or contact our support team at Julian.santamaria@udea.edu.co . We are here to help.
-
-
- 
+If you encounter any issues or have any questions, please feel free to open an issue in the repository or contact our support team at Julian.santamaria@udea.edu.co. We are here to help.
