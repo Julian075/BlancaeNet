@@ -19,7 +19,7 @@ To use the computational application, follow these steps:
 1. Download the entire repository to your local machine.
 2. Make sure you have downloaded and installed MATLAB Runtime(R2023a) from the provided link.
 3. Ensure that the files `CNN_and_Data_Atlapetes.mat` and `Resnet18_AtlapetesBlancae.mat` have been downloaded correctly (check the file size). If they have not been downloaded correctly, download them individually and place them in the corresponding folder.
-4. Run the executable file to initiate the recognition process.
+4. Run the executable or  file to initiate the recognition process.
 
 ## Support
 
