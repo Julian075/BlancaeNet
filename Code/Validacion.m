@@ -1,7 +1,7 @@
 clear memory; clear all; clc
-load('Resnet18_AtlapetesBlancae.mat');
+load('CNN_resnet18.mat');
 
-imds_val=imageDatastore('F:\Proyecto_grado\Imagenes\Segmentation_RPCA\Segmentado\Test', 'IncludeSubfolders', true,'LabelSource','foldernames');
+imds_val=imageDatastore('F:\Proyecto_grado\Imagenes\Segmentation_RPCA\Segmentado\Validation', 'IncludeSubfolders', true,'LabelSource','foldernames');
 labels_val = imds_val.Labels;
 inputSize = [224 224 3];
 imds_val = augmentedImageDatastore(inputSize, imds_val);
@@ -21,9 +21,33 @@ set(gcf,'Color',[1 1 1])
 xlabel('Call','FontSize',20,'FontName','Arial');
 ylabel('Individual','FontSize',20,'FontName','Arial');
 legend({'True Class','Predicted Class'},'Location','southeast','NumColumns',2)
-hold on
+hold off
 % obtener la matriz de confusión
 confMat = confusionmat(labels_val, YPred);
 
 % visualizar la matriz de confusión
 confusionchart(confMat)
+% Calcular el número de clases
+numClasses = size(confMat, 1);
+
+% Inicializar los vectores de precisión (precision) y sensibilidad (recall)
+precision = zeros(numClasses, 1);
+recall = zeros(numClasses, 1);
+
+% Calcular la precisión y sensibilidad para cada clase
+for i = 1:numClasses
+    % Calcular la precisión
+    precision(i) = confMat(i,i) / sum(confMat(:,i));
+    
+    % Calcular la sensibilidad
+    recall(i) = confMat(i,i) / sum(confMat(i,:));
+end
+
+% Calcular el F1-score para cada clase
+f1Score = 2 * (precision .* recall) ./ (precision + recall);
+
+% Calcular el promedio del F1-score
+averageF1Score = mean(f1Score);
+
+% Imprimir el promedio del F1-score en consola
+disp(['F1-score: ', num2str(averageF1Score)]);
