@@ -81,7 +81,7 @@ for(h=1:size(beta,2))
                 imageName = listColor(k+2).name;
                 imageName = imageName(1:end-4);
                 
-                imageNames(k,:) = imageName;
+                imageNames{k} = imageName;
                 imagePath = [colorPath listColor(k+2).name];
                 image = imread(imagePath);
                 %image = image(1:2348,:,:);
@@ -127,8 +127,9 @@ for(h=1:size(beta,2))
                 %bw = activecontour(groundImg,afterOpening,200,'edge','contractionBias',-0.3);   %Active contours
                 bw = imclose(afterOpening,se);    %Morphological clossing
                 bw = imopen(bw,se);     %Morphological openning
+                l;
                 bw = imbinarize(bw);
-                imwrite(bw,[automaticColorPath imageNames(l,:) '.bmp'],'bmp');    %Saving the segmented image
+                imwrite(bw,[automaticColorPath imageNames{l} '.bmp'],'bmp');    %Saving the segmented image
             end
         end
     end
