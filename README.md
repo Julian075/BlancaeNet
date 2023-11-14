@@ -10,7 +10,7 @@ The repository includes the following:
 
 - **Executable:** The executable file for the computational application (compatible with Windows). Please note that you need to download and install MATLAB Runtime(R2023a) for the executable to work. You can download MATLAB Runtime from the following link: [MATLAB Runtime](https://www.mathworks.com/products/compiler/mcr/index.html).
 - **Source Code:** The source code used to generate the executable and train the neural network.
-- **Dataset:** The dataset used for training and evaluation. You can download the dataset from the following link: [Segments of video frmaes](https://udeaeduco-my.sharepoint.com/:f:/r/personal/julian_santamaria_udea_edu_co/Documents/BlancaeNet_Interfaz_Matlab/Base%20de%20datos/Frames%20Videos%20segmentados?csf=1&web=1&e=c2ynab), [Audio](http://i2d.humboldt.org.co/ceiba/resource.do?r=bancosonidos).
+- **Dataset:** The dataset used for training and evaluation. You can download the dataset from the following link: [Segments of video frames](https://udeaeduco-my.sharepoint.com/:f:/r/personal/julian_santamaria_udea_edu_co/Documents/BlancaeNet_Interfaz_Matlab/Base%20de%20datos/Frames%20Videos%20segmentados?csf=1&web=1&e=c2ynab), [Audio](http://i2d.humboldt.org.co/ceiba/resource.do?r=bancosonidos).
 
 ## Usage
 
