@@ -55,8 +55,8 @@ for k=3:length(videos)
                     break
                 end
             end
-            frame_rate=table_frame_rate.FrameRate (indice);
-            segundo = (frame - 1) / str2double(frame_rate);
+            frame_rate=30;%table_frame_rate.FrameRate (indice);
+            segundo = (frame - 1) / frame_rate;%str2double(frame_rate);
             segundo=round(segundo,1);
             Time_s(i)=segundo;
             Name_Video(i)=vid_name;

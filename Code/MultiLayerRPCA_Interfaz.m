@@ -127,7 +127,6 @@ for(h=1:size(beta,2))
                 %bw = activecontour(groundImg,afterOpening,200,'edge','contractionBias',-0.3);   %Active contours
                 bw = imclose(afterOpening,se);    %Morphological clossing
                 bw = imopen(bw,se);     %Morphological openning
-                l;
                 bw = imbinarize(bw);
                 imwrite(bw,[automaticColorPath imageNames{l} '.bmp'],'bmp');    %Saving the segmented image
             end

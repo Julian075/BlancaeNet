@@ -113,6 +113,13 @@ writetable(Y,[rutout_results '/' Name_excel '.csv'])
 %% %%%%%%%%% FUNCTIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function [data1] = preprocessing(s,fs,window,overlap,nbins)
 %% Median Equalizer *******************************************************
+
+%Se agrego el if para verificar convertir el audio a mono en caso de ser
+%estereo
+if size(s, 2)>1
+    s=s(:,1);
+end
+
 spec=spectrogram(s,hann(window),overlap,nbins,fs);
 spec1=abs(spec.^2); %power spectrogram
 spec4=(spec1'./median(spec1'))'; %noise filter
